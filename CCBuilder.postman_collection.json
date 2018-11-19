@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "2c520208-f0cd-4926-a67a-500924c3ec7c",
+		"name": "CCBuilder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getFilterList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://klccomputing.com/ccbuilder/getFilterList.php",
+					"protocol": "https",
+					"host": [
+						"klccomputing",
+						"com"
+					],
+					"path": [
+						"ccbuilder",
+						"getFilterList.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMovieList",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ratings\": [\n\t\t{\n\t\t\t\"rating\": \"G\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\t\"rating\": \"R\"\n\t\t}\n\t],\n\t\"categories\": [\n\t\t{\n\t\t\t\"category\": 8\n\t\t}\n\t],\n\t\"title\": \"bl\"\n}"
+				},
+				"url": {
+					"raw": "https://klccomputing.com/ccbuilder/getMovieList.php",
+					"protocol": "https",
+					"host": [
+						"klccomputing",
+						"com"
+					],
+					"path": [
+						"ccbuilder",
+						"getMovieList.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMovieDetails",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"filmID\": \"23\"\n}"
+				},
+				"url": {
+					"raw": "https://klccomputing.com/ccbuilder/getMovieDetails.php",
+					"protocol": "https",
+					"host": [
+						"klccomputing",
+						"com"
+					],
+					"path": [
+						"ccbuilder",
+						"getMovieDetails.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
